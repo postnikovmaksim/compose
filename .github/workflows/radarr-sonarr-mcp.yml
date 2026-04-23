@@ -5,7 +5,7 @@ on:
     paths:
       - "radarr-sonarr-mcp/**"
       - ".github/workflows/radarr-sonarr-mcp.yml"
-  workflow_dispatch:
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -30,7 +30,7 @@ jobs:
         with:
           images: yourname/radarr-sonarr-mcp
           tags: |
-            type=latest
+            type=raw,value=latest
             type=sha
 
       - name: Build and push
