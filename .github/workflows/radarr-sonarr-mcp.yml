@@ -5,7 +5,7 @@ on:
     paths:
       - "radarr-sonarr-mcp/**"
       - ".github/workflows/radarr-sonarr-mcp.yml"
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: yourname/radarr-sonarr-mcp
+          images: postnikovm/radarr-sonarr-mcp
           tags: |
             type=raw,value=latest
             type=sha
